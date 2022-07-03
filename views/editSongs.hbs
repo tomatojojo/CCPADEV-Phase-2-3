@@ -3,9 +3,12 @@
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link href="upload.css" rel="stylesheet" type="text/css" />
   </head>
-  <body class="uploadBG">
+  <body class="uploadBG" style="background-image: url(../misc/smokeveil3.png)">
     <div class = "fileUpload">
+      <div style="background-color: rgb(9,178,222); border-radius: 20px 20px 0 0; color: white;">
       <br>
+      <h3 style="text-align: center;">Edit Your Track:</h3><br>
+      </div><br>
       <form id = "uploadForm" action="/submit-edit-song" method="post" enctype="multipart/form-data">
         <label for="Selected Song">What Song do you wish to edit? </label><br>
         <input type="text" id="selectedSong" name="selectedSong" required><br><br>
