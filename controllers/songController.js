@@ -128,7 +128,7 @@ exports.displaySearch = async (req,res) =>{
 
     const songList = await Song.find({$or: [{songName: {$regex: criteria,  $options: "i"}}, {artistName: {$regex: criteria,  $options: "i"}}]}).lean();
     User.findMany({username: {$regex: criteria,  $options: "i"}}, function(err, result){
-        res.render('searchPage', {songList, criteria, result});
+        res.render('searchpage', {songList, criteria, result});
     });
     
 };
