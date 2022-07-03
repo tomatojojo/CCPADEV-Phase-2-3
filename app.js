@@ -24,7 +24,7 @@ const MongoStore = require('connect-mongo');
 app.use(session({
     secret: 'somegibbersihsecret',
     store: MongoStore.create({
-        mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost:27017'
+        mongoUrl: 'mongodb://localhost:27017'
     }),
     resave: false,
     saveUninitialized: true,
