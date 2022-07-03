@@ -7,8 +7,10 @@ const {isPublic, isPrivate} = require('./middlewares/checkAuth');
 
 const authRouter = require('./routes/auth');
 
+require('dotenv').config();
+
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/jjjsongs',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/jjjsongs',
 {useNewURLParser: true, useUnifiedTopology: true});
 
 var app = new express();
