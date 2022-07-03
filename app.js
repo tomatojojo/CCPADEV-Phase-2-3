@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/jjjsongs',
 
 var app = new express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 const session = require('express-session');
 const flash = require('connect-flash');
@@ -39,6 +39,9 @@ app.use((req, res, next) =>{
     next();
 })
 
+app.set('views', path.join(__dirname, 'views'));
+
+app.engine('hbs', require('ejs').renderFile);
 app.set('view engine', 'hbs');
 app.engine('hbs', hbs.engine({extname: 'hbs'}));
 
