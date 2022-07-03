@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/jjjsongs',
 {useNewURLParser: true, useUnifiedTopology: true});
 
-var app = express();
+var app = new express();
 
 app.use(express.static(__dirname + '/public'));
 
