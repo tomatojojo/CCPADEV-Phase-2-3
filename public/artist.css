@@ -41,8 +41,9 @@
     
     .songImg{
       height: auto;
-      max-height:100%;
-      max-width: 200px;
+      height:100px;
+      width: 100px;
+      object-fit: cover;
       overflow:hidden;
       float:left;
       border-radius:20px 0 0 20px;
