@@ -1,6 +1,8 @@
 var port = process.env.PORT || 3000;
 
 const express = require('express');
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 const path = require('path');
 const hbs = require('express-handlebars');
 const {isPublic, isPrivate} = require('./middlewares/checkAuth');
@@ -78,3 +80,5 @@ var server = app.listen(port, function(){
 });
 
 app.use('/', authRouter);
+
+module.exports.bcrypt = bcrypt;

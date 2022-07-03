@@ -2,7 +2,7 @@ const User = require('../database/models/User');
 const SavedSong = require('../database/models/SavedSong');
 const Song = require('../database/models/Song');
 const SongLikes = require('../database/models/SongLikes');
-const bcrypt = require('bcrypt');
+const bcrypt = require('../app.js').bcrypt;
 const path = require('path');
 
 //Register User
