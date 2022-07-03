@@ -1,4 +1,4 @@
-var port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 const express = require('express');
 const path = require('path');
@@ -73,7 +73,7 @@ app.get('/library', async(req,res) => {
     res.render('library',{songs, ownSongs, savedSongs});
 });
 
-var server = app.listen(port, function(){
+var server = app.listen(PORT, function(){
     console.log("Node server is running at port 3000...");
 });
 
