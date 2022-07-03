@@ -71,7 +71,7 @@ app.get('/library', async(req,res) => {
     res.render('library',{songs, ownSongs, savedSongs});
 });
 
-server = app.listen(port, function(){
+var server = app.listen(port, function(){
     console.log("Node server is running at port 3000...");
 });
 
