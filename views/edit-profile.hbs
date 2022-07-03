@@ -1,0 +1,52 @@
+
+  <head>
+    <title>Editing profile page</title>
+    <link href="settings.css" rel="stylesheet" type="text/css" />
+    <link href="slider.css" rel="stylesheet" type="text/css" />
+  </head>
+    
+    <div class = "innerDiv">
+      <div id ="topBox">
+        <div id="settingsTop">
+          <h1>Edit Profile</h1>
+          <h3>adjust your profile here!</h3>
+          <br>
+        </div>
+      </div>
+   
+
+      <div id="settingsBody">
+        <form action="/submit-edit-profile" method="post" enctype="multipart/form-data">
+          <br>
+          <h2>Profile Details</h2>
+          <h4>Profile Picture</h4><br>
+          <img id="imgPreview" src="../{{profpic}}" opacity = "95">
+          <br>
+          <input type="file" id='dp' name="dp"><br><br>
+
+          <h4>Username</h4>
+          <input type="text" id='username' name="username" value='{{username}}' required><br><br>
+          
+          <h4>First Name</h4>
+          <input type="text" id='fname' name="fname" value='{{fname}}' required><br><br>
+
+          <h4>Last Name</h4>
+          <input type="text" id='lname' name="lname" value='{{lname}}' required><br><br>
+          
+          <h4>Email</h4>
+          <input type="email" id='email'name="email" value={{email}} required><br><br>
+
+          <h4>New Password (Leave blank if no changes)</h4>
+          <input type="text" id='newpassword' name="newpassword"><br><br>
+
+          <h4>Confirm New Password (Leave blank if no changes)</h4>
+          <input type="text" id='confirmnewpassword' name="confirmnewpassword"><br><br>
+
+
+          <input type="submit" name="submit" id="editButton" value="SUBMIT" style="margin:0; width:163px;">
+          <br><br><hr><br>
+      </form>
+      </div>
+   
+    </div> 
+

@@ -1,0 +1,29 @@
+  <head>
+    <title>Upload page</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="upload.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="uploadBG" style="background-image: url(../misc/smokeveil3.png)">
+    <div class = "fileUpload">
+      <div style="background-color: rgb(9,178,222); border-radius: 20px 20px 0 0; color: white;">
+      <br>
+      <h3 style="text-align: center;">Upload Your Track:</h3><br>
+      </div><br>
+      <form id = "uploadForm" action="/upload-song" method="post" enctype="multipart/form-data">
+      <div style="padding-left: 5%;">
+          <label for="Track Name" style="font-weight: bold;">Track Name </label><br>
+          <input type="text" id="track_name" name="songName" required><br><br>
+
+        
+          <p style="font-weight: bold;">Song File</p><br>
+          <input type="file" id="myFile" name="songFile" required><br><br>
+
+          <p style="font-weight: bold;">Song Cover</p><br>
+          <input type="file" id="myFile" name="songCover" required><br><br><br>
+      </div>
+        <div style = "text-align: center;">
+          <input type="submit" id="uploadBtn" value= " Submit Track "><br>
+        </div>
+      </form>
+    </div>
+  </body>  

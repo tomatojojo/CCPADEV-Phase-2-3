@@ -1,0 +1,124 @@
+  <head>
+    <title>Library</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="library.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="library.js"></script>
+  </head>
+
+    <div class="tab">
+      <button class="tablinks"  id="defaultOpen" onclick="openTab(event, 'browse')">Browse songs</button>
+      <button class="tablinks" onclick="openTab(event, 'trending')">Trending</button>
+      <button class="tablinks" onclick="openTab(event, 'saved')">Saved songs</button>
+      <button class="tablinks" onclick="openTab(event, 'owned')">Your songs</button>
+    </div>
+
+    <div id="browse" class="libraryDiv">
+        {{#each songs}}
+        <div>
+          <div class="songDiv">
+            <img class="songImg" src='../{{this.songCover}}'>
+            
+            <div class="songDetails">
+              <h1>{{this.songName}}</h1>
+              <p>{{this.artistName}}</p>
+            </div>
+
+              <div class = "audioPlayer">
+                <audio controls preload ="none">
+                  <source src='../{{this.songFile}}' type="audio/mp3">
+                </audio>
+              </div>
+              
+          </div>
+          
+          <!---BUTTONS-->
+          <p class="likeCtr">{{this.numLikes}}</p>
+          <input type="image" class="likeBtn" src="../misc/like.png" height=3% width=3%>
+          <input type="image" class="btn" src="../misc/download.png" height=3% width=3%>
+          <br><br><br>
+        </div>
+        {{/each}}
+    </div>
+
+    <div id="trending" class="libraryDiv">
+        {{#each trending}}
+        <div>
+          <div class="songDiv">
+            <img class="songImg" src='../{{this.songCover}}'>
+            
+            <div class="songDetails">
+              <h1>{{this.songName}}</h1>
+              <p>{{this.artistName}}</p>
+            </div>
+
+              <div class = "audioPlayer">
+                <audio controls preload ="none">
+                  <source src='../{{this.songFile}}' type="audio/mp3">
+                </audio>
+              </div>
+              
+          </div>
+          
+          <!---BUTTONS-->
+         <p class="likeCtr" >{{this.numLikes}}</p>
+         <input type="image" class="likeBtn" src="../misc/like.png" height=3% width=3%>
+          <input type="image" class="btn" src="../misc/download.png" height=3% width=3%>
+          <br><br><br>
+        </div>
+        {{/each}}
+    </div>
+
+    <div id="saved" class="libraryDiv">
+      {{#each savedSongs}}
+        <div>
+          <div class="songDiv">
+            <img class="songImg" src='../{{this.songCover}}'>
+            
+            <div class="songDetails">
+              <h1>{{this.songName}}</h1>
+              <p>{{this.artistName}}</p>
+            </div>
+
+            <div class = "audioPlayer">
+                <audio controls preload ="none">
+                  <source src='../{{this.songFile}}' type="audio/mp3">
+                </audio>
+            </div>
+          </div>
+          
+          <!---BUTTONS-->
+          <input type="image" class="leftBtn" src="../misc/trash.png" height=3% width=3%>
+          <br><br><br>
+        </div>
+      {{/each}}
+    </div>
+ 
+    <div id="owned" class="libraryDiv">
+      {{#each ownSongs}}
+      <div>
+        <div class="songDiv">
+          <img class="songImg" src='../{{this.songCover}}'>
+          
+          <div class="songDetails">
+            <h1>{{this.songName}}</h1>
+            <p>{{this.artistName}}</p>
+          </div>
+
+            <div class = "audioPlayer">
+              <audio controls preload ="none">
+                <source src='../{{this.songFile}}' type="audio/mp3">
+              </audio>
+            </div>
+            
+        </div>
+        
+        <!---BUTTONS-->
+        <input type="image" class="leftBtn" src="../misc/trash.png" height=3% width=3%>
+        <a href='/editSongs'><input type="image" class="btn" src="../misc/edit.png" height=3% width=3%></a>
+        <br><br><br>
+        </div>
+      {{/each}}
+    </div>
+
+    <script>document.getElementById("defaultOpen").click()</script>

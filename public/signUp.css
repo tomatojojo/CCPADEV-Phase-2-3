@@ -1,0 +1,16 @@
+#signUpForm {
+    padding-top:25px;
+    padding-left:65px;
+    color:black;
+  }
+
+.signUpBox{
+    display: block;
+    margin: auto;
+    height: 610px;
+    width: 700px;
+    margin-top: 40px;
+    background-color: white;
+    font: Roboto,sans-serif;
+    border-radius: 20px;
+}

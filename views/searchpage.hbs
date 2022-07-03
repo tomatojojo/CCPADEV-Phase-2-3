@@ -1,0 +1,51 @@
+<head>
+    <title>Library</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="searchpage.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="searchpage.js"></script>
+  </head>
+
+    <div id="searchpage" class="libraryDiv">
+        <h1 id='result'>Showing results for "<span style="text-decoration:underline;">{{criteria}}</span>"</h1>
+        {{#each songList}}
+        <div>
+          <div class="songDiv">
+            <img class="songImg" src='../{{this.songCover}}'>
+
+            <div class="songDetails">
+              <h1>{{this.songName}}</h1>
+              <p>{{this.artistName}}</p>
+            </div>
+
+              <div class = "audioPlayer">
+                <audio controls preload ="none">
+                  <source src='../{{this.songFile}}' type="audio/mp3">
+                </audio>
+              </div>
+
+          </div>
+
+          <!---BUTTONS-->
+          <p class="likeCtr">{{this.numLikes}}</p>
+          <input type="image" class="likeBtn" src="../misc/like.png" height=3% width=3%>
+          <input type="image" class="btn" src="../misc/download.png" height=3% width=3%>
+          <br><br><br>
+        </div>
+        {{/each}}
+
+        <div id="artistSection">
+        {{#each result}}
+        <div class="artistDiv">
+          <div class="songDiv">
+            <img class="songImg" src='../{{this.profpic}}'>
+
+            <div class="songDetails">
+              <h1>{{this.username}}</h1>
+            </div>
+          </div>
+          <br><br><br>
+        </div>
+        {{/each}}
+        </div>
+    </div>

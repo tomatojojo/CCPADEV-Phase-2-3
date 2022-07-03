@@ -1,0 +1,26 @@
+
+  <head>
+    <title>Login page</title>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <link href="login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="formBG">
+
+      <div class="formBox">
+        <div style="background-color: rgb(9,178,222); border-radius: 20px 20px 0 0; color: white;">
+        <br>
+        <h3 style="text-align: center;">Account Log In:</h3><br>
+        </div>
+        <form id="loginform" action='/submit-login' method='post'>
+          <label for="username">Username </label><br>
+          <input type="text" id="username" name="username" required><br><br>
+          <label for="loginpassword">Password </label><br>
+          <input type="password" id="loginpassword" name="password" required><br><br><br>
+
+          <input type="submit" class="submitBtn">
+        </form>
+        <br>
+        <span id="signUpLink"><a href="signup" style="color: rgb(9,178,222); text-decoration: underline;">Register Here!</a></span>
+      </div>
+    
+  </body>

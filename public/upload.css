@@ -1,0 +1,45 @@
+.uploadBG{
+  background-image: url("https://wallpapercave.com/wp/wp3409426.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fileUpload{
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 455px;
+  margin-top: 135px;
+  background-color: white;
+  opacity: 100%;
+  font-family: Roboto,sans-serif;
+  border-radius: 20px;
+}
+
+#track_name{
+  border: solid;
+  border-radius: 8px;
+}
+
+#selectedSong{
+  border: solid;
+  border-radius: 8px;
+}
+
+#uploadBtn:hover {
+  transition:0.3s;
+  background-color:rgb(7, 122, 163);
+  border-radius:5px;
+  padding:5px;
+  font-weight:bold;
+}
+
+#uploadBtn {
+  transition: 0.3s;
+  font-family: Roboto,sans-serif;
+  padding:5px;
+  font-weight:bold;
+  background-color: rgb(9,178,222);
+  color: #FFFFFF; 
+}

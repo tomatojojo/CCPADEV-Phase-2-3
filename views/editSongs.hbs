@@ -1,0 +1,22 @@
+  <head>
+    <title>Upload page</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="upload.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="uploadBG">
+    <div class = "fileUpload">
+      <br>
+      <form id = "uploadForm" action="/submit-edit-song" method="post" enctype="multipart/form-data">
+        <label for="Selected Song">What Song do you wish to edit? </label><br>
+        <input type="text" id="selectedSong" name="selectedSong" required><br><br>
+
+        <label for="Track Name">Track Name </label><br>
+        <input type="text" id="track_name" name="songName"><br><br>
+
+        <p>Song cover</p><br>
+        <input type="file" id="myFile" name="songCover"><br><br>
+       
+        <input type="submit" id="uploadBtn" value= " Submit Track "><br>
+      </form>
+    </div>
+  </body>  

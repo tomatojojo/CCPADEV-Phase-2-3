@@ -1,0 +1,27 @@
+#about{
+    text-align: center;
+    margin: 0 100px 0 100px;
+  }
+  
+  .images{
+    height: 300px;
+    width: auto;
+    padding-right: 10px;
+  }
+  
+  #AboutUs{
+    font-family: Georgia, serif;
+  }
+  
+  #AboutUsDesc{
+    font-family: Georgia, serif;
+    line-height: 1.5;
+  }
+  
+  #pictures{
+    display: inline-block;
+  }
+  
+  .member {
+    float:right;
+  }

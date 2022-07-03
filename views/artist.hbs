@@ -1,0 +1,49 @@
+
+
+  <head>
+    <title>Home page</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="artist.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="artistpage.js"></script>
+  </head>
+    
+    <div class = "innerDiv">
+      <div id ="ArtistBox">
+        <div id="dpSection">
+            <img id="dp" src="../{{user.profpic}}" style ="width: 300px; height: 300px; object-fit: cover;">
+        </div>
+
+        <div id="ArtistDetails">
+            <h4>Artist</h4>
+            <h1>{{user.username}}</h1>
+        </div>
+      </div>
+
+        <div class="libraryDiv">
+            {{#each songs}}
+            <div>
+                <div class="songDiv">
+                    <img class="songImg" src="../{{this.songCover}}">
+                    
+                    <div class="songDetails">
+                        <h1>{{this.songName}}</h1>
+                        <p>{{this.artistName}}</p>
+                    </div>
+
+                    <div class = "audioPlayer">
+                        <audio controls preload ="none">
+                        <source src='../{{this.songFile}}' type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+                
+                <p class="likeCtr">{{this.numLikes}}</p>
+                <input type="image" class="likeBtn" src="../misc/like.png" height=3% width=3%>
+                <input type="image" class="btn" src="../misc/download.png" height=3% width=3%>
+                <br><br><br>
+            </div>
+            {{/each}}
+        </div>
+  </div>

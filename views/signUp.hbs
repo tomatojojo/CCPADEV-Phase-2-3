@@ -1,0 +1,38 @@
+
+  <head>
+    <title>Sign up page</title>
+   
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <link href="signUp.css" rel="stylesheet" type="text/css" />
+   
+  </head>
+  <body class="formBG">
+    <div class="signUpBox">
+        <div style="background-color: rgb(9,178,222); border-radius: 20px 20px 0 0; color: white;">
+        <br>
+        <h3 style="text-align: center;">Register Your Account:</h3><br>
+        </div>
+          <form id="signUpForm" action='/register' method='post'>
+            <label for="fname">First Name: </label><br>
+            <input type="text" id="fname" name="fname" style="width: 80%;" required><br><br>
+
+            <label for="lname">Last Name: </label><br>
+            <input type="text" id="lname" name="lname" style="width: 80%;" required><br><br>
+
+            <label for="username">Username: </label><br>
+            <input type="text" id="username" name="username" style="width: 80%;" required><br><br>
+
+            <label for="signupemail">Email: </label><br>
+            <input type="email" id="signupemail" name="email" style="width: 80%;" required><br><br>
+
+          
+            <label for="signuppassword">Password: </label><br>
+            <input type="password" id="signuppassword" name="password" style="width: 80%;" required><br><br>
+
+            <label for="cpassword">Confirm Password: </label><br>
+            <input type="password" id="cpassword" name="cpassword" style="width: 80%;" required><br><br><br><br>
+          
+            <input class="submitBtn" type="submit" style="width: 90%; height: 40px;">
+          </form>
+      </div>
+</body>

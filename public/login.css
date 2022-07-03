@@ -1,0 +1,21 @@
+#loginform {
+    padding-top:11%;
+    padding-left:21%;
+    color:black;
+  }
+  
+  #signUpLink {
+    position: relative;
+    font-weight:bold;
+    right:-150px;
+    font-size: 15px;
+  }
+
+  #signUpLink a:visited{
+    color:black;
+  }
+  
+  #signUpLink a:hover{
+    color:rgb(4, 77, 104);
+    font-weight:bold;
+  }

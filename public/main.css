@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+navigation{
+  margin: -8px -10px 0 -10px;
+}
+
+/*
+div{
+  margin: auto;
+}
+*/
+
+hr{
+  border: 1px dashed darkgray;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  padding-left: 200px;
+  padding-right: 100px;
+	overflow: hidden;
+	background-color: rgb(9,178,222);
+	font-weight: bold;
+}
+
+li {
+  float: left;
+}
+
+li:nth-child(n+2):nth-child(-n+5){
+  padding-top:10px;
+}
+
+li:nth-child(6){
+  padding-top:5px;
+  float: right;
+}
+
+li:nth-child(7){
+  padding-top: 10px;
+  float: right;
+}
+
+li a {
+	transition:0.3s;
+  display: block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+li a:hover {
+  transition:0.3s;
+  color: rgb(18,30,55);
+	background-color: rgb(9,165,221);
+  border-radius: 15px;
+}
+
+li.logo a:hover {
+  background-color: rgb(9,165,221);
+  border-radius: 15px;
+}
+
+.searchBar{
+  padding: 3px;
+  border: none;
+  margin-top: 18px;
+  margin-right: 100px;
+  width: 350px;
+  font-size: 17px;
+  font-family: Georgia, serif;
+}
+
+@media screen and (max-width: 800px) {
+  li, .searchBar  {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .searchBar  {
+    border: 1px solid #ccc;
+    font-family: Georgia, serif;
+  }
+}
+
+#settings{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+}
+
+body {
+  background-color: rgb(241,243,241);
+  font: 18px Roboto,sans-serif;
+  color:rgb(18,30,55);
+}
+
+
+
+

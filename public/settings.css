@@ -1,0 +1,108 @@
+#topBox {
+    display: block;
+    height: 250px;
+    background-color:green;
+    background-image: url("https://images.unsplash.com/photo-1518972559570-7cc1309f3229?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size:100%;
+    background-position:center;
+    opacity: 95%
+  }
+  
+  #settingsTop{
+    text-align: left;
+    padding-top:75px;
+    padding-left:50px;
+    color: white;
+  }
+  
+  #settingsBody{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block;
+    /*width: 470px;*/
+    height: auto;
+    text-align: justify;
+    font: Roboto,sans-serif;
+    color:lightgray;
+
+    
+  }
+  
+  #settingsBody h4,h2{
+    font-weight:bold;
+    color:white;
+  }
+  
+  .edit{
+    text-align:right;
+    text-decoration:underline;
+    position:relative;
+    float:right;
+  }
+  
+  .remove{
+    text-align:right;
+    color:#D00000;
+    text-decoration:underline;
+    position:relative;
+    float:right;
+  }
+
+  .logout{
+    text-align:right;
+    color:#D00000;
+    text-decoration:underline;
+    position:relative;
+    float:right;
+  }
+  
+  #imgPreview{
+    width: 300px; height: 300px; object-fit: cover;
+  }
+  
+  .innerDiv{
+    margin: 0 200px 0 200px;
+    padding: 0 0 0 0;
+    background-color: rgb(38, 38, 38);
+  }
+
+  #editButton:hover{
+    transition: 0.3s;
+    color: white;
+	  background-color: rgb(7, 122, 163);
+    border-radius: 8px;
+  }
+
+  #editButton {
+    transition: 0.3s;
+    background-color: rgb(9,178,222);
+    color: rgb(18,30,55);
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font: 20px Roboto,sans-serif;
+    font-weight: bold;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+#red:hover{
+  transition: 0.3s;
+  color:white;
+  background-color: #7d0000;
+  border-radius: 8px;
+}
+
+#red {
+  transition: 0.3s;
+  background-color: #D00000;;
+  color: whitesmoke;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font: 20px Roboto,sans-serif;
+  font-weight: bold;
+  margin: 10px 30px;
+  cursor: pointer;
+}

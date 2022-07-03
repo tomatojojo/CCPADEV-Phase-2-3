@@ -1,0 +1,59 @@
+
+  <head>
+    <title>Settings page</title>
+    <link href="settings.css" rel="stylesheet" type="text/css" />
+  </head>
+    
+    <div class = "innerDiv">
+      <div id ="topBox">
+        <div id="settingsTop">
+          <h1>Settings</h1>
+          <h3>Adjust your settings here!</h3>
+          <br>
+        </div>
+      </div>
+   
+
+      <div id="settingsBody">
+        <br>
+        <h2>Profile Details:</h2><br><hr><br>
+        <h4>Profile Picture</h4>
+        <img id="imgPreview" src="../{{profpic}}" opacity = "95">
+        <p class="edit"> <a href='/edit-profile'><button id="editButton">Edit</button></a></p><br><br>
+        
+        <h4>First Name</h4>
+        <p>{{fname}}</p>
+        <br>
+
+        <h4>Last Name</h4>
+        <p>{{lname}}</p>
+        <br>
+        
+        <h4>Username</h4>
+        <p>{{username}}</p>
+        <br>
+        
+        <h4>Password</h4>
+        <p>••••••••••</p>
+        <br>
+        
+        <h4>Email</h4>
+        <p>{{email}}</p>
+
+        <p class="logout"><button id="red"><a href="/logout" style="text-decoration:none;color:white;">Logout</a></button></p><p></p><br><br>
+        
+        <br>
+        <hr><br>
+        <h2>Settings and Privacy</h2><br>
+        <h4>Delete Account</h4>
+        <p>You can delete your account forever here. This deletes all your uploaded songs.</p>
+        
+        <p class="remove"><button id="red">Delete</button></p><br>
+
+        
+
+        <br><br><br>
+      </div>
+   
+    </div> 
+
