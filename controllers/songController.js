@@ -30,8 +30,10 @@ exports.uploadSong =  (req,res) => {
                 console.log(count);
                 //moves songcover to the public file
                 song.songCover.mv(path.resolve(__dirname, '../public/songs', song.songCover.name), (error) => {
-                    if (error)
+                    if (error) {
+                        console.log(error)
                         res.redirect('/error')
+                    }
                 })
 
                 //moves songfile to the public folder and creates the entry to the databases
