@@ -70,7 +70,7 @@ app.get('/library', async(req,res) => {
 
     const trending = await Song.find({}).sort({numLikes: 'desc'}).limit(10).lean();
     
-    res.render('library',{songs, ownSongs, savedSongs});
+    res.render('library',{songs, ownSongs, savedSongs, trending});
 });
 
 var server = app.listen(PORT, function(){
