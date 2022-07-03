@@ -42,3 +42,16 @@
   background-color: rgb(9,178,222);
   color: #FFFFFF; 
 }
+
+#editSong{
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 455px;
+  margin-top: 135px;
+  background-color: white;
+  opacity: 100%;
+  font-family: Roboto,sans-serif;
+  border-radius: 20px;
+  padding-left: 3%;
+}
