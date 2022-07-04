@@ -28,7 +28,7 @@
   .songDetails{
     color:rgb(255 255 255);
     margin-left:125px;
-    width:fit-content;
+    width:50%;
     position:relative;
     top:20%;
     overflow: hidden;
