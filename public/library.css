@@ -28,10 +28,10 @@
 .songDetails{
   color:rgb(255 255 255);
   margin-left:125px;
-  width:fit-content;
-  max-width: 200px;
+  width:60%;
   position:relative;
   top:20%;
+  text-overflow: ellipsis;
 }
 
 .audioPlayer{
