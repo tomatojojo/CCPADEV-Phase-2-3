@@ -26,6 +26,7 @@
     float:right;
   }
 
-  #dependencies > ul > li{
-    all: none;
+  #dependencies ul li{
+    all: initial;
+    all: unset;
   }
