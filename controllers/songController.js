@@ -10,7 +10,7 @@ exports.uploadSong =  (req,res) => {
 
     //checks if file is correct type
     const extensionName1 = path.extname(song.songFile.name)
-    const allowedExtension1 = ['.mp3', '.wav']
+    const allowedExtension1 = ['.mp3', '.wav', '.m4a']
     const extensionName2 = path.extname(song.songCover.name)
     const allowedExtension2 = ['.jpg', '.png']
 
