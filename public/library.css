@@ -28,7 +28,9 @@
 .songDetails{
   color:rgb(255 255 255);
   margin-left:125px;
-  width:25%;
+  width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   position:relative;
   top:20%;
 }
