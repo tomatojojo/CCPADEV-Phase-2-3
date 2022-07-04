@@ -25,3 +25,7 @@
   .member {
     float:right;
   }
+
+  #dependencies ul li{
+    all: none;
+  }
