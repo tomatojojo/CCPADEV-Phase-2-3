@@ -140,18 +140,16 @@ exports.editUser = (req,res) => {
             if(req.files){
                 var img = req.files;
 
-                const extensionName = path.extname(song.songCover.name)
+                const extensionName = path.extname(img.dp.name)
                 const allowedExtension = ['.jpg', '.png', '.gif']
 
-                if(!allowedExtension.includes(extensionName)){
-                    res.redirect('library')
-                }
-                else{
+                if(allowedExtension.includes(extensionName)){
                     img.dp.mv(path.resolve(__dirname, '../public/profpics',img.dp.name))
     
                     User.updateOne({_id: req.session.user}, {fname: fname, lname: lname, email: email, profpic: '/profpics/'+img.dp.name}, function(err, result){
                     });
                 }
+                res.redirect('settings');
             }
     
             //if they didnt load a new dp
