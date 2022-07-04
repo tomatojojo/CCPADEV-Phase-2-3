@@ -149,7 +149,6 @@ exports.editUser = (req,res) => {
                     User.updateOne({_id: req.session.user}, {fname: fname, lname: lname, email: email, profpic: '/profpics/'+img.dp.name}, function(err, result){
                     });
                 }
-                res.redirect('settings');
             }
     
             //if they didnt load a new dp
