@@ -58,12 +58,14 @@ exports.loginUser = (req,res) => {
                 else {
                     
                     console.log('passwords do not match')
+                    res.redirect('/login');
                 }
             });
         } 
         else {
             console.log("no user exists in database");
-          }
+            res.redirect('/login');
+        }
         
       });
       
