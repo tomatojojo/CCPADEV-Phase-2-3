@@ -139,11 +139,19 @@ exports.editUser = (req,res) => {
             //if they uploaded a new dp
             if(req.files){
                 var img = req.files;
+
+                const extensionName = path.extname(song.songCover.name)
+                const allowedExtension = ['.jpg', '.png', '.gif']
+
+                if(!allowedExtension.includes(extensionName)){
+                    res.redirect('library')
+                }
+                else{
+                    img.dp.mv(path.resolve(__dirname, '../public/profpics',img.dp.name))
     
-                img.dp.mv(path.resolve(__dirname, '../public/profpics',img.dp.name))
-    
-                User.updateOne({_id: req.session.user}, {fname: fname, lname: lname, email: email, profpic: '/profpics/'+img.dp.name}, function(err, result){
-                });
+                    User.updateOne({_id: req.session.user}, {fname: fname, lname: lname, email: email, profpic: '/profpics/'+img.dp.name}, function(err, result){
+                    });
+                }
             }
     
             //if they didnt load a new dp
