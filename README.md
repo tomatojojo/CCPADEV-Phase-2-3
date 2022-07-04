@@ -49,6 +49,9 @@ Run cmd and install the dependencies using “npm install”.
 ## Executing the program from Heroku
 Use this link: https://j3musicwebsite-ccapdevmp.herokuapp.com/
 
+## For extra details about the authors and dependencies
+Click the "J3" logo to navigate to the about page.
+
 ## Authors
 Ano, Joseph Thomas: joseph_ano@dlsu.edu.ph
 Ejercito, Joshua Carl: joshua_ejercito@dlsu.edu.ph

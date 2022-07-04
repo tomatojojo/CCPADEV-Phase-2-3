@@ -4,24 +4,19 @@ const songController = require('../controllers/songController');
 const savedSongController = require('../controllers/savedSongController');
 const {isPublic, isPrivate} = require('../middlewares/checkAuth');
 
-//cover page
-router.get('/cover', function(req, res){
-  res.render('cover')
-});
-
 //main page
 router.get('/', function(req, res){ 
   res.render('index');
 });
 
 //edit song page
-router.get('/editSongs', function(req, res){ 
+router.get('/editSongs', isPrivate, function(req, res){ 
   res.render('editSongs');
 });
 
 //cover page
-router.get('/cover', function(req, res){
-  res.render('cover')
+router.get('/about', function(req, res){
+  res.render('about');
 });
 
 //login page

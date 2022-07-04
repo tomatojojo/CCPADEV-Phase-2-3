@@ -52,17 +52,6 @@ app.use(fileUpload());
 
 const SavedSong = require('./database/models/SavedSong');
 
-app.get('/delete-saved-song', async (req,res) =>{
-    var songName = req.query.songName;
-    var artistName = req.query.artistName;
-    
-    SavedSong.deleteOne({songName: songName, artistName: artistName, username: req.session.name}, (error, result) => {
-        if(error) return false;
-        console.log('Document deleted: ' + result.deletedCount);
-        return true;
-    });
-});
-
 app.get('/library', async(req,res) => {
     const songs = await Song.find({}).lean();
     const ownSongs = await Song.find({artistName: req.session.name}).lean();
