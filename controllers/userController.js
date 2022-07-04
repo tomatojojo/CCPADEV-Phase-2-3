@@ -143,7 +143,7 @@ exports.editUser = (req,res) => {
                 var img = req.files;
 
                 const extensionName = path.extname(img.dp.name)
-                const allowedExtension = ['.jpg', '.png', '.gif']
+                const allowedExtension = ['.jpg', '.png', '.gif', '.jpeg']
 
                 if(allowedExtension.includes(extensionName)){
                     img.dp.mv(path.resolve(__dirname, '../public/profpics',img.dp.name))
