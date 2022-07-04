@@ -7,7 +7,17 @@ This website serves as our group’s final project for the course CCAPDEV. It ma
 ## Getting Started
 
 ### Dependencies
-NodeJS and npm
+express.js
+express-hbs
+mongoose
+express-fileupload
+body-parser
+express-session
+connect-mongo
+connect-flash
+express-validator
+bcryptjs
+NodeJS
 MongoDB Community Edition or MongoDB Atlas Cluster
 Any text editor for JavaScript, HTML and CSS
 Heroku
@@ -48,3 +58,4 @@ Limjoco, Jared Ethan: jared_limjoco@dlsu.edu.ph
 Sir. Arturo Caronongan (arturo.caronongan@dlsu.edu.ph)
 Ms. Candy Espulgar (candy.espulgar@dlsu.edu.ph)
 Ms. Unisse Chua (unisse.chua@dlsu.edu.ph)
+
