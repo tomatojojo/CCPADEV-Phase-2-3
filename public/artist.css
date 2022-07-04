@@ -54,6 +54,8 @@
       width:fit-content;
       position:relative;
       top:20%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     
   .audioPlayer{
