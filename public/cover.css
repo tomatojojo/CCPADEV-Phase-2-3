@@ -26,6 +26,6 @@
     float:right;
   }
 
-  #dependencies ul{
+  #dependencies.ul > li{
     all: none;
   }
